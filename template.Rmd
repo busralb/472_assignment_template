@@ -5,7 +5,7 @@ date: "AT 2023"
 output: html_document
 ---
 
-```{r setup, include=FALSE} 
+```{r setup, include=FALSE}
 # this chunk contains code that sets global options for the entire .Rmd. 
 # we use include=FALSE to suppress it from the top of the document, but it will still appear in the appendix. 
 
@@ -18,21 +18,21 @@ This document contains the necessary commands and layout to meet the formatting 
 
 ## Formatting requirements
 
-* You must present all results in full sentences, as you would in a report or academic piece of writing
-  
-  * If the exercise requires generating a table or figure, you should include at least one sentence introducing and explaining it. E.g. "The table below reports the counts of Wikipedia articles mentioning the LSE, by type of article."
+-   You must present all results in full sentences, as you would in a report or academic piece of writing
 
-* Unless stated otherwise, all code used to answer the exercises should be included as a code appendix at the end of the script. This formatting can be achieved by following the guidance in this template file.
+    -   If the exercise requires generating a table or figure, you should include at least one sentence introducing and explaining it. E.g. "The table below reports the counts of Wikipedia articles mentioning the LSE, by type of article."
 
-* All code should be annotated with comments, to help the marker understand what you have done
+-   Unless stated otherwise, all code used to answer the exercises should be included as a code appendix at the end of the script. This formatting can be achieved by following the guidance in this template file.
 
-* Your output should be replicable. Any result/table/figure that cannot be traced back to your code will not be marked
+-   All code should be annotated with comments, to help the marker understand what you have done
+
+-   Your output should be replicable. Any result/table/figure that cannot be traced back to your code will not be marked
 
 ## Example of in-line figures without code
 
 For those interested, we achieve the formatting requirements in two-steps: 1) in the `setup` chunk, we set `knitr::opts_chunk$set(echo = FALSE)` so that code is not included (echoed) by default in code chunks; 2) we add a specific chunk at the end of the file to collect and print *all* the code in the Rmarkdown file. Do not delete the final code chunk from the template!
 
-For example, below we use a code chunk to generate random data and include a scatter plot in-line. The code used to generate this chart is only reported at the end of the document. 
+For example, below we use a code chunk to generate random data and include a scatter plot in-line. The code used to generate this chart is only reported at the end of the document.
 
 ```{r plot_example}
 set.seed(89) # set a seed for R's psuedo-randomiser, for replicability.
@@ -52,7 +52,7 @@ print("This code chunk is visible in this section.")
 
 ## Appendix: All code in this assignment
 
-```{r ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE} 
+```{r ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
 # this chunk generates the complete code appendix. 
 # eval=FALSE tells R not to run (``evaluate'') the code here (it was already run before).
 ```
